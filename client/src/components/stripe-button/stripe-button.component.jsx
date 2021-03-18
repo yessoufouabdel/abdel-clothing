@@ -19,7 +19,7 @@ const StripeCheckoutButton = ({ price }) => {
         alert('succesful payment');
       })
       .catch(error => {
-        console.log('Payment Error: ', error);
+        console.log('Payment Error: ', JSON.parse(error));
         alert(
           'There was an issue with your payment! Please make sure you use the provided credit card.'
         );
@@ -32,7 +32,7 @@ const StripeCheckoutButton = ({ price }) => {
       name='CRWN Clothing Ltd.'
       billingAddress
       shippingAddress
-      image='https://svgshare.com/i/CUz.svg'
+      image='https://sendeyo.com/up/d/f3eb2117da'
       description={`Your total is $${price}`}
       amount={priceForStripe}
       panelLabel='Pay Now'

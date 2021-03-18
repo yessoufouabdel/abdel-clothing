@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const MenuItemContainer = styled.div`
-	height: ${({ size }) => (size ? '380px' : '240px')};
+	height: ${({ size }) => (size ? '380px' : '240px')}
 	min-width: 30%;
 	overflow: hidden;
 	flex: 1 1 auto;
@@ -33,10 +33,12 @@ export const MenuItemContainer = styled.div`
     margin-left: 7.5px;
   }
 
-  @media screen and (max-width: 800px){
+  @media screen and (max-width: 800px) {
     height: 200px;
   }
 `;
+
+MenuItemContainer.displayName = 'MenuItemContainer';
 
 export const BackgroundImageContainer = styled.div`
   width: 100%;
@@ -45,6 +47,8 @@ export const BackgroundImageContainer = styled.div`
   background-position: center;
   background-image: ${({ imageUrl }) => `url(${imageUrl})`};
 `;
+
+BackgroundImageContainer.displayName = 'BackgroundImageContainer';
 
 export const ContentContainer = styled.div`
   height: 90px;
